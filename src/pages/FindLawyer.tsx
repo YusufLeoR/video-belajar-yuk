@@ -14,7 +14,7 @@ const FindLawyer = () => {
     {
       id: 1,
       name: "Ahmad Wijaya, S.H., M.H.",
-      specialization: "Hukum Pidana",
+      specialization: "Hukum Bisnis UMKM",
       location: "Jakarta Selatan",
       experience: "10 tahun",
       rating: 4.8,
@@ -23,7 +23,7 @@ const FindLawyer = () => {
     {
       id: 2,
       name: "Dr. Sarah Putri, S.H.",
-      specialization: "Hukum Perdata",
+      specialization: "Hak Kekayaan Intelektual",
       location: "Jakarta Pusat",
       experience: "8 tahun",
       rating: 4.9,
@@ -32,7 +32,7 @@ const FindLawyer = () => {
     {
       id: 3,
       name: "Budi Santoso, S.H., M.H.",
-      specialization: "Hukum Bisnis",
+      specialization: "Kontrak & Perjanjian",
       location: "Jakarta Barat",
       experience: "12 tahun",
       rating: 4.7,
@@ -41,7 +41,7 @@ const FindLawyer = () => {
     {
       id: 4,
       name: "Dina Kusuma, S.H.",
-      specialization: "Hukum Keluarga",
+      specialization: "Merek Dagang & Hak Cipta",
       location: "Tangerang",
       experience: "6 tahun",
       rating: 4.6,
@@ -56,9 +56,9 @@ const FindLawyer = () => {
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-3xl md:text-4xl font-bold mb-2">Cari Pengacara</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-2">Cari Pengacara Spesialis UMKM</h1>
           <p className="text-muted-foreground">
-            Temukan pengacara profesional yang sesuai dengan kebutuhan Anda
+            Temukan ahli hukum yang berpengalaman menangani masalah bisnis UMKM dan ekonomi kreatif
           </p>
         </div>
 
@@ -88,16 +88,16 @@ const FindLawyer = () => {
             Semua Spesialisasi
           </Badge>
           <Badge variant="outline" className="cursor-pointer hover:bg-accent">
-            Hukum Pidana
+            Hukum Bisnis UMKM
           </Badge>
           <Badge variant="outline" className="cursor-pointer hover:bg-accent">
-            Hukum Perdata
+            Hak Kekayaan Intelektual
           </Badge>
           <Badge variant="outline" className="cursor-pointer hover:bg-accent">
-            Hukum Bisnis
+            Kontrak & Perjanjian
           </Badge>
           <Badge variant="outline" className="cursor-pointer hover:bg-accent">
-            Hukum Keluarga
+            Merek Dagang & Hak Cipta
           </Badge>
         </div>
 

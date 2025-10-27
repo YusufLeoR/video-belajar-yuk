@@ -8,35 +8,35 @@ const Home = () => {
   const features = [
     {
       icon: Users,
-      title: "Cari Pengacara",
-      description: "Temukan pengacara profesional yang sesuai dengan kebutuhan hukum Anda",
+      title: "Pengacara Spesialis UMKM",
+      description: "Temukan pengacara berpengalaman dalam hukum bisnis UMKM dan HKI",
       link: "/find-lawyer",
     },
     {
       icon: FileText,
-      title: "Buat Dokumen",
-      description: "Buat dokumen hukum dengan mudah menggunakan template yang tersedia",
+      title: "Template Dokumen Legal",
+      description: "Buat kontrak kerja sama, MOU, dan perjanjian bisnis dengan mudah",
       link: "/create-document",
     },
     {
       icon: MessageSquare,
-      title: "Chatbot AI",
-      description: "Konsultasi awal dengan AI assistant untuk panduan hukum dasar",
+      title: "Konsultasi AI 24/7",
+      description: "Dapatkan jawaban cepat tentang hak cipta, merek dagang, dan kontrak",
       link: "/chatbot",
     },
     {
       icon: Scale,
-      title: "Daftar Sebagai Pengacara",
-      description: "Bergabung dengan platform kami sebagai profesional hukum",
+      title: "Layanan Pengacara Pro",
+      description: "Bergabung sebagai ahli hukum UMKM dan ekonomi kreatif",
       link: "/register-lawyer",
     },
   ];
 
   const benefits = [
-    "Akses mudah ke profesional hukum terpercaya",
-    "Konsultasi online yang praktis dan efisien",
-    "Template dokumen hukum yang valid",
-    "AI assistant untuk panduan awal",
+    "Biaya konsultasi terjangkau untuk UMKM dan kreator",
+    "Spesialis hukum bisnis, HKI, dan kontrak",
+    "Template dokumen legal siap pakai untuk UMKM",
+    "Perlindungan hak cipta dan merek dagang",
   ];
 
   return (
@@ -51,20 +51,23 @@ const Home = () => {
               <Shield className="h-8 w-8" />
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Solusi Bantuan Hukum Anda
+              Solusi Hukum untuk UMKM & Kreator Indonesia
             </h1>
-            <p className="text-lg md:text-xl text-white/90 mb-8">
-              Platform terpadu untuk konsultasi hukum, pencarian pengacara, dan pembuatan dokumen legal
+            <p className="text-lg md:text-xl text-white/90 mb-4">
+              Platform bantuan hukum yang praktis, efisien, dan terjangkau untuk melindungi bisnis dan karya kreatif Anda
+            </p>
+            <p className="text-base text-white/80 mb-8">
+              Khusus menangani masalah hak cipta, merek dagang, kontrak kerja sama, dan sengketa bisnis UMKM
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/auth">
                 <Button size="lg" variant="secondary" className="w-full sm:w-auto">
-                  Mulai Sekarang
+                  Mulai Gratis
                 </Button>
               </Link>
-              <Link to="/find-lawyer">
+              <Link to="/chatbot">
                 <Button size="lg" variant="outline" className="w-full sm:w-auto bg-white/10 border-white/20 text-white hover:bg-white/20">
-                  Cari Pengacara
+                  Konsultasi AI Gratis
                 </Button>
               </Link>
             </div>
@@ -76,9 +79,9 @@ const Home = () => {
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Layanan Kami</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Layanan untuk UMKM & Kreator</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Berbagai fitur yang dirancang untuk memudahkan akses Anda terhadap layanan hukum
+              Solusi hukum lengkap untuk melindungi bisnis, karya, dan hak kekayaan intelektual Anda
             </p>
           </div>
 
@@ -105,9 +108,9 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Mengapa Navigo?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Mengapa UMKM & Kreator Memilih Navigo?</h2>
               <p className="text-muted-foreground text-lg">
-                Platform terpercaya untuk kebutuhan hukum Anda
+                Karena kami memahami tantangan hukum yang Anda hadapi
               </p>
             </div>
 
@@ -129,14 +132,14 @@ const Home = () => {
           <Card className="bg-gradient-primary text-white border-0">
             <CardContent className="p-8 md:p-12 text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Siap Mendapatkan Bantuan Hukum?
+                Lindungi Bisnis & Karya Anda Sekarang
               </h2>
               <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-                Bergabung dengan ribuan pengguna yang telah mempercayai Navigo untuk kebutuhan hukum mereka
+                Bergabung dengan ribuan pelaku UMKM dan kreator yang telah melindungi hak bisnis mereka bersama Navigo
               </p>
               <Link to="/auth">
                 <Button size="lg" variant="secondary">
-                  Daftar Gratis
+                  Mulai Konsultasi Gratis
                 </Button>
               </Link>
             </CardContent>

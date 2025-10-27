@@ -17,7 +17,7 @@ const Chatbot = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,
-      text: "Halo! Saya adalah asisten AI Navigo. Saya siap membantu Anda dengan pertanyaan hukum dasar. Apa yang bisa saya bantu hari ini?",
+      text: "Halo! Saya asisten AI Navigo yang siap membantu masalah hukum UMKM dan ekonomi kreatif. Saya bisa membantu pertanyaan tentang hak cipta, merek dagang, kontrak bisnis, dan sengketa UMKM. Ada yang bisa saya bantu?",
       sender: "bot",
       timestamp: new Date(),
     },
@@ -54,10 +54,10 @@ const Chatbot = () => {
   };
 
   const quickQuestions = [
-    "Bagaimana cara membuat surat kuasa?",
-    "Apa itu hukum perdata?",
-    "Bagaimana proses gugatan cerai?",
-    "Apa saja dokumen untuk kontrak kerja?",
+    "Bagaimana cara mendaftarkan merek dagang UMKM?",
+    "Apa itu hak cipta dan bagaimana melindunginya?",
+    "Bagaimana membuat kontrak kerja sama yang aman?",
+    "Bagaimana menangani sengketa dengan supplier?",
   ];
 
   return (
@@ -67,9 +67,9 @@ const Chatbot = () => {
       <div className="container mx-auto px-4 py-8 flex-1 flex flex-col">
         {/* Header */}
         <div className="mb-6">
-          <h1 className="text-3xl md:text-4xl font-bold mb-2">Chatbot AI</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-2">Konsultasi AI untuk UMKM</h1>
           <p className="text-muted-foreground">
-            Tanyakan pertanyaan hukum dasar kepada AI assistant kami
+            Dapatkan jawaban cepat seputar hak cipta, merek dagang, kontrak, dan masalah hukum UMKM lainnya
           </p>
         </div>
 
@@ -201,9 +201,9 @@ const Chatbot = () => {
         <Card className="mt-6 bg-accent border-primary/20">
           <CardContent className="p-4">
             <p className="text-sm text-muted-foreground">
-              <strong>Catatan:</strong> AI assistant ini memberikan informasi hukum dasar.
-              Untuk masalah hukum yang kompleks, silakan berkonsultasi dengan pengacara
-              profesional melalui fitur Cari Pengacara.
+              <strong>Catatan:</strong> AI assistant ini memberikan panduan awal seputar hukum UMKM dan ekonomi kreatif.
+              Untuk kasus yang lebih kompleks atau memerlukan penanganan legal formal, silakan konsultasikan dengan
+              pengacara spesialis melalui fitur Cari Pengacara.
             </p>
           </CardContent>
         </Card>

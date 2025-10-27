@@ -7,43 +7,43 @@ const CreateDocument = () => {
   const documentTemplates = [
     {
       id: 1,
-      title: "Surat Kuasa",
-      description: "Template surat kuasa untuk berbagai keperluan hukum",
+      title: "MOU Kerja Sama Bisnis",
+      description: "Nota kesepahaman untuk kerja sama antar UMKM atau dengan partner",
       icon: FileText,
       popular: true,
     },
     {
       id: 2,
-      title: "Perjanjian Sewa",
-      description: "Perjanjian sewa menyewa properti atau kendaraan",
+      title: "Perjanjian Kontrak Kerja",
+      description: "Kontrak kerja untuk karyawan atau freelancer UMKM",
       icon: FileText,
       popular: true,
     },
     {
       id: 3,
-      title: "Surat Perjanjian Kerja",
-      description: "Template kontrak kerja antara pemberi dan penerima kerja",
+      title: "Perjanjian Lisensi Merek",
+      description: "Lisensi penggunaan merek dagang atau logo bisnis",
       icon: FileText,
-      popular: false,
+      popular: true,
     },
     {
       id: 4,
-      title: "Surat Pernyataan",
-      description: "Template surat pernyataan untuk berbagai keperluan",
+      title: "Perjanjian Non-Disclosure (NDA)",
+      description: "Perjanjian kerahasiaan untuk melindungi informasi bisnis",
       icon: FileText,
       popular: false,
     },
     {
       id: 5,
-      title: "Perjanjian Jual Beli",
-      description: "Perjanjian transaksi jual beli barang atau properti",
+      title: "Kontrak Jual Beli B2B",
+      description: "Perjanjian transaksi bisnis antar perusahaan",
       icon: FileText,
-      popular: true,
+      popular: false,
     },
     {
       id: 6,
-      title: "Surat Somasi",
-      description: "Template surat peringatan atau teguran hukum",
+      title: "Perjanjian Hak Cipta Karya",
+      description: "Pengalihan atau lisensi hak cipta untuk karya kreatif",
       icon: FileText,
       popular: false,
     },
@@ -56,9 +56,9 @@ const CreateDocument = () => {
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-3xl md:text-4xl font-bold mb-2">Buat Dokumen</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-2">Template Dokumen Legal UMKM</h1>
           <p className="text-muted-foreground">
-            Pilih template dokumen hukum yang Anda butuhkan
+            Buat kontrak, MOU, dan perjanjian bisnis dengan template yang telah disesuaikan untuk UMKM
           </p>
         </div>
 

@@ -32,10 +32,10 @@ const RegisterLawyer = () => {
               <Scale className="h-8 w-8 text-primary" />
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">
-              Daftar Sebagai Pengacara
+              Daftar Sebagai Pengacara Spesialis UMKM
             </h1>
             <p className="text-muted-foreground">
-              Bergabung dengan platform Navigo dan jangkau lebih banyak klien
+              Bergabung dengan platform Navigo dan bantu ribuan pelaku UMKM serta kreator Indonesia
             </p>
           </div>
 
@@ -47,10 +47,10 @@ const RegisterLawyer = () => {
             <CardContent>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {[
-                  "Akses ke database klien potensial",
-                  "Platform konsultasi online terintegrasi",
-                  "Manajemen kasus yang efisien",
-                  "Pembayaran aman melalui platform",
+                  "Akses ke ribuan UMKM dan kreator",
+                  "Spesialisasi di hukum bisnis & HKI",
+                  "Platform konsultasi online praktis",
+                  "Komisi dan pembayaran yang kompetitif",
                 ].map((benefit, index) => (
                   <div key={index} className="flex items-start gap-2">
                     <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
@@ -114,11 +114,11 @@ const RegisterLawyer = () => {
                           <SelectValue placeholder="Pilih spesialisasi" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="pidana">Hukum Pidana</SelectItem>
-                          <SelectItem value="perdata">Hukum Perdata</SelectItem>
-                          <SelectItem value="bisnis">Hukum Bisnis</SelectItem>
-                          <SelectItem value="keluarga">Hukum Keluarga</SelectItem>
-                          <SelectItem value="tata-negara">Hukum Tata Negara</SelectItem>
+                          <SelectItem value="bisnis-umkm">Hukum Bisnis UMKM</SelectItem>
+                          <SelectItem value="hki">Hak Kekayaan Intelektual</SelectItem>
+                          <SelectItem value="kontrak">Kontrak & Perjanjian</SelectItem>
+                          <SelectItem value="merek-hak-cipta">Merek Dagang & Hak Cipta</SelectItem>
+                          <SelectItem value="sengketa-bisnis">Sengketa Bisnis</SelectItem>
                           <SelectItem value="lainnya">Lainnya</SelectItem>
                         </SelectContent>
                       </Select>
