@@ -5,6 +5,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Auth from "./pages/Auth";
+import VerifyOTP from "./pages/VerifyOTP";
+import ForgotPassword from "./pages/ForgotPassword";
 import FindLawyer from "./pages/FindLawyer";
 import CreateDocument from "./pages/CreateDocument";
 import Chatbot from "./pages/Chatbot";
@@ -23,6 +25,8 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/auth" element={<Auth />} />
+          <Route path="/verify-otp" element={<VerifyOTP />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/find-lawyer" element={<FindLawyer />} />
           <Route path="/create-document" element={<CreateDocument />} />
           <Route path="/chatbot" element={<Chatbot />} />

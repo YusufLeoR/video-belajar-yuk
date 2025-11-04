@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -9,6 +9,7 @@ import { Scale } from "lucide-react";
 
 const Auth = () => {
   const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -16,6 +17,16 @@ const Auth = () => {
     // Simulate API call
     setTimeout(() => {
       setIsLoading(false);
+    }, 1500);
+  };
+
+  const handleRegisterSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsLoading(true);
+    // Simulate API call
+    setTimeout(() => {
+      setIsLoading(false);
+      navigate("/verify-otp");
     }, 1500);
   };
 
@@ -65,15 +76,15 @@ const Auth = () => {
                     {isLoading ? "Memproses..." : "Masuk"}
                   </Button>
                   <div className="text-center text-sm text-muted-foreground">
-                    <a href="#" className="hover:text-primary">
+                    <Link to="/forgot-password" className="hover:text-primary">
                       Lupa password?
-                    </a>
+                    </Link>
                   </div>
                 </form>
               </TabsContent>
 
               <TabsContent value="register">
-                <form onSubmit={handleSubmit} className="space-y-4">
+                <form onSubmit={handleRegisterSubmit} className="space-y-4">
                   <div className="space-y-2">
                     <Label htmlFor="name">Nama Lengkap</Label>
                     <Input
